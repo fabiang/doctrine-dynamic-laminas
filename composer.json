@@ -1,0 +1,33 @@
+{
+    "name": "fabiang/doctrine-dynamic-zf",
+    "description": "Zend Framework binding for doctrine-dynamic",
+    "type": "library",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Fabian Grutschus",
+            "email": "f.grutschus@lubyte.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:fabiang/doctrine-dynamic.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Fabiang\\DoctrineDynamic\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "doctrine/orm": "^2.5",
+        "fabiang/doctrine-dynamic": "dev-entity-options",
+        "zendframework/zend-eventmanager": "^3.0",
+        "zendframework/zend-modulemanager": "^2.7",
+        "zendframework/zend-mvc": "^2.0 || ^3.0",
+        "zendframework/zend-servicemanager": "^2.7 || ^3.0"
+    }
+}
