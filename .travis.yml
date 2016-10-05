@@ -4,7 +4,7 @@ sudo: false
 
 cache:
   directories:
-    - $HOME/.cache/composer
+    - $XDG_CACHE_HOME/composer
 
 env:
   matrix:
@@ -17,11 +17,10 @@ php:
   - hhvm
   
 before_install:
-  - composer self-up
   - composer config --global github-oauth.github.com $GITHUB_OAUTH_TOKEN
 
 install:
-  - composer update --no-interaction --prefer-stable $PREFER_LOWEST
+  - composer update --no-interaction --prefer-stable --prefer-dist --no-suggest --no-scripts --no-plugins $PREFER_LOWEST
 
 script:
   - ./vendor/bin/phpunit --coverage-clover=build/logs/clover.xml
