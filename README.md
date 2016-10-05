@@ -52,7 +52,7 @@ return [
                     'products' => [
                         'oneToMany' => [
                             [
-                                'targetEntity' => \Mymodule\Entity\Customer::class::class,
+                                'targetEntity' => \Mymodule\Entity\Customer::class,
                                 'mappedBy'     => 'customer',
                             ]
                         ]
