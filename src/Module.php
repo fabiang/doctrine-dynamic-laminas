@@ -23,6 +23,6 @@ final class Module implements InitProviderInterface, ConfigProviderInterface
 
     public function getConfig()
     {
-        return require __DIR__ . '/../module.config.php';
+        return require __DIR__ . '/../config/module.config.php';
     }
 }

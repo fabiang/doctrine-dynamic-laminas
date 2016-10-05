@@ -25,7 +25,7 @@
         "php": "^5.6 || ^7.0",
         "doctrine/orm": "^2.5",
         "fabiang/doctrine-dynamic": "dev-entity-options",
-        "zendframework/zend-eventmanager": "^3.0 || ^2.5",
+        "zendframework/zend-eventmanager": "^2.5 || ^3.0",
         "zendframework/zend-modulemanager": "^2.7",
         "zendframework/zend-mvc": "^2.0 || ^3.0",
         "zendframework/zend-servicemanager": "^2.7 || ^3.0"
