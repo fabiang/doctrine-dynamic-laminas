@@ -10,6 +10,9 @@ use Zend\Mvc\MvcEvent;
 
 final class Module implements InitProviderInterface, ConfigProviderInterface
 {
+    /**
+     * {@inheritDoc}
+     */
     public function init(ModuleManagerInterface $manager)
     {
         $sharedEventManager = $manager->getEventManager()->getSharedManager();
@@ -21,6 +24,9 @@ final class Module implements InitProviderInterface, ConfigProviderInterface
         );
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function getConfig()
     {
         return require __DIR__ . '/../config/module.config.php';
