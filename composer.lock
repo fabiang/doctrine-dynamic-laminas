@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8f274afb1851c3b285c52857ff2cb11f",
-    "content-hash": "9a8888ade2da0ce0c4238b6fc21fd2fc",
+    "hash": "4c8ed7bfa56f5748e3a5fee432b4dbe4",
+    "content-hash": "0b425a07d0a8ff303edc0dcd9800f5b7",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -635,16 +635,16 @@
         },
         {
             "name": "fabiang/doctrine-dynamic",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabiang/doctrine-dynamic.git",
-                "reference": "e21e7a68360e06c743dc7658af365f63f3a4f70a"
+                "reference": "e2939c32614c31e09d84d7a8018c1ed2d7c16fba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabiang/doctrine-dynamic/zipball/e21e7a68360e06c743dc7658af365f63f3a4f70a",
-                "reference": "e21e7a68360e06c743dc7658af365f63f3a4f70a",
+                "url": "https://api.github.com/repos/fabiang/doctrine-dynamic/zipball/e2939c32614c31e09d84d7a8018c1ed2d7c16fba",
+                "reference": "e2939c32614c31e09d84d7a8018c1ed2d7c16fba",
                 "shasum": ""
             },
             "require": {
@@ -676,7 +676,7 @@
                 }
             ],
             "description": "Load Doctrine mappings dynamically for your entities by configuration",
-            "time": "2016-10-05 15:20:00"
+            "time": "2016-10-05 15:28:23"
         },
         {
             "name": "psr/log",
