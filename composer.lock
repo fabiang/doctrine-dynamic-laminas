@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f29b740fbed320644a42e49123f172cb",
-    "content-hash": "4bd628a27a9da0b7e5e324d6f5b6a774",
+    "hash": "4801de60b83b17ef2a6cbc73cab1b81f",
+    "content-hash": "5958b9a875bbf8c4aa1af879ea511326",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -635,7 +635,7 @@
         },
         {
             "name": "fabiang/doctrine-dynamic",
-            "version": "dev-entity-options",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabiang/doctrine-dynamic.git",
@@ -665,13 +665,7 @@
                     "Fabiang\\DoctrineDynamic\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Fabiang\\DoctrineDynamic\\Behat\\": "tests/features/bootstrap/",
-                    "Fabiang\\DoctrineDynamic\\Behat\\NamespaceOne\\Entity\\": "tests/entities/NamespaceOne/",
-                    "Fabiang\\DoctrineDynamic\\Behat\\NamespaceTwo\\Entity\\": "tests/entities/NamespaceTwo/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-2-Clause"
             ],
@@ -682,10 +676,6 @@
                 }
             ],
             "description": "Load Doctrine mappings dynamically for your entities by configuration",
-            "support": {
-                "source": "https://github.com/fabiang/doctrine-dynamic/tree/entity-options",
-                "issues": "https://github.com/fabiang/doctrine-dynamic/issues"
-            },
             "time": "2016-10-04 15:32:46"
         },
         {
@@ -1716,9 +1706,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "fabiang/doctrine-dynamic": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
