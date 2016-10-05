@@ -27,7 +27,7 @@ Load the module by adding it to `config/application.config.php`:
 ```php
 return [
     'modules' => [
-        /* ** */
+        /** **/
         'Fabiang\DoctrineDynamic',
     ],
 ];
@@ -48,14 +48,12 @@ return [
                 'repository' => \Mymodule\Repository\CustomerRepository::class,
             ],
             'fields' => [
-                'oneToOne' => [
-                    'oneToOne' => [
-                        [
-                            'targetEntity' => \Mymodule\Entity\Products::class,
-                            'inversedBy'   => 'oneToOne',
-                            'joinColumns'  => [
-                                'name'                 => 'oneToOne',
-                                'referencedColumnName' => 'id'
+                'fieldname' => [
+                    'products' => [
+                        'oneToMany' => [
+                            [
+                                'targetEntity' => \Mymodule\Entity\Customer::class::class,
+                                'mappedBy'     => 'customer',
                             ]
                         ]
                     ]
@@ -64,11 +62,15 @@ return [
         ],
         \Mymodule\Entity\Products::class => [
             'fields' => [
-                'oneToOne' => [
-                    'oneToOne' => [
+                'customer' => [
+                    'manyToOne' => [
                         [
-                            'targetEntity' => \Mymodule\Entity\Customer::class,
-                            'mappedBy'     => 'oneToOne',
+                            'targetEntity' => \Mymodule\Entity\Products::class,
+                            'inversedBy'   => 'products',
+                            'joinColumns'  => [
+                                'name'                 => 'customer_id',
+                                'referencedColumnName' => 'id'
+                            ]
                         ]
                     ]
                 ]
