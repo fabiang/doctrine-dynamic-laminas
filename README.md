@@ -2,6 +2,7 @@
 
 Zend Framework 2/3 binding for [fabiang/doctrine-dynamic](https://github.com/fabiang/doctrine-dynamic).
 
+[![Build Status](https://travis-ci.org/fabiang/doctrine-dynamic-zf.svg?branch=master)](https://travis-ci.org/fabiang/doctrine-dynamic-zf)
 [![Latest Stable Version](https://poser.pugx.org/fabiang/doctrine-dynamic-zf/version)](https://packagist.org/packages/fabiang/doctrine-dynamic-zf)
 [![License](https://poser.pugx.org/fabiang/doctrine-dynamic-zf/license)](https://packagist.org/packages/fabiang/doctrine-dynamic-zf)
 
