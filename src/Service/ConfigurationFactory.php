@@ -8,9 +8,8 @@ use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
-class ConfigurationFactory
-    extends BaseConfigurationFactory
-    implements FactoryInterface
+class ConfigurationFactory extends BaseConfigurationFactory implements
+    FactoryInterface
 {
     /**
      * @param ContainerInterface $container

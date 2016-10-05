@@ -10,15 +10,14 @@ use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
-final class ProxyDriverFactory
-    extends BaseProxyDriverFactory
-    implements FactoryInterface
+final class ProxyDriverFactory extends BaseProxyDriverFactory implements
+    FactoryInterface
 {
     /**
      * @param ContainerInterface $container
      * @param string $requestedName
      * @param array $options
-     * @return ProxyDriver
+     * @return ProxyDriver[]
      */
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
