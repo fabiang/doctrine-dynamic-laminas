@@ -13,7 +13,7 @@ Zend Framework 2/3 binding for [fabiang/doctrine-dynamic](https://github.com/fab
 This module works with Zend Framework 2 and 3, but
 `zendframework/zend-servicemanager` must be at least at version 2.7.6.
 
-Please see the [composer.json](composer.json) file.
+Please see the [composer.json](composer.json) file for all other packages required.
 
 ## Installation
 
