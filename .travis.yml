@@ -4,7 +4,7 @@ sudo: false
 
 cache:
   directories:
-    - $XDG_CACHE_HOME/composer
+    - $HOME/.cache/composer
 
 env:
   matrix:
