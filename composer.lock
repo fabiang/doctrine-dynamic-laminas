@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4c8ed7bfa56f5748e3a5fee432b4dbe4",
-    "content-hash": "0b425a07d0a8ff303edc0dcd9800f5b7",
+    "hash": "91ab884e4830bae90d46d3a741bb4e0d",
+    "content-hash": "4224de528fa07f6aa290b4df14be3b0f",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -2200,16 +2200,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.5.7",
+            "version": "5.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3f67cee782c9abfaee5e32fd2f57cdd54bc257ba"
+                "reference": "a7f2db56518e50ab92f28f739810dfad2f223b6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3f67cee782c9abfaee5e32fd2f57cdd54bc257ba",
-                "reference": "3f67cee782c9abfaee5e32fd2f57cdd54bc257ba",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a7f2db56518e50ab92f28f739810dfad2f223b6b",
+                "reference": "a7f2db56518e50ab92f28f739810dfad2f223b6b",
                 "shasum": ""
             },
             "require": {
@@ -2243,7 +2243,6 @@
                 "ext-pdo": "*"
             },
             "suggest": {
-                "ext-tidy": "*",
                 "ext-xdebug": "*",
                 "phpunit/php-invoker": "~1.1"
             },
@@ -2253,7 +2252,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.5.x-dev"
+                    "dev-master": "5.6.x-dev"
                 }
             },
             "autoload": {
@@ -2279,7 +2278,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-10-03 13:04:15"
+            "time": "2016-10-06 15:20:39"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

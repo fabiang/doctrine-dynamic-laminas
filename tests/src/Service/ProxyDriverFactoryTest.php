@@ -2,7 +2,7 @@
 
 namespace Fabiang\DoctrineDynamic\Service;
 
-use PHPUnit_Framework_TestCase as TestCase;
+use PHPUnit\Framework\TestCase;
 use Fabiang\DoctrineDynamic\Configuration;
 use Fabiang\DoctrineDynamic\ProxyDriver;
 use Doctrine\ORM\EntityManager;

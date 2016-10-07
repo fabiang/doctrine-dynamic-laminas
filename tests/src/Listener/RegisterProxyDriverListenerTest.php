@@ -2,7 +2,7 @@
 
 namespace Fabiang\DoctrineDynamic\Listener;
 
-use PHPUnit_Framework_TestCase as TestCase;
+use PHPUnit\Framework\TestCase;
 use Fabiang\DoctrineDynamic\ProxyDriver;
 use Zend\Mvc\MvcEvent;
 use Zend\Mvc\ApplicationInterface;
