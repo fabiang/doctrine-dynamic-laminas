@@ -86,7 +86,7 @@ return [
 
 ## Development
 
-Thie library is tested with [PHPUnit](https://phpunit.de/).
+This library is tested with [PHPUnit](https://phpunit.de/).
 
 Fork the project on Github and send an pull request with your changes.
 Make sure you didn't break anything with running the following commands:
