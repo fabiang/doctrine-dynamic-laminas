@@ -18,7 +18,7 @@ Please see the [composer.json](composer.json) file for all other packages requir
 
 ## Installation
 
-Run the following `composer` command:
+New to Composer? Read the [introduction](https://getcomposer.org/doc/00-intro.md#introduction). Run the following Composer command:
 
 ```console
 $ composer require fabiang/doctrine-dynamic-zf
@@ -84,6 +84,18 @@ return [
 ];
 ```
 
-## LICENSE
+## Development
 
-BSD-2-Clause. See the [LICENSE](LICENSE.md).
+Thie library is tested with [PHPUnit](https://phpunit.de/).
+
+Fork the project on Github and send an pull request with your changes.
+Make sure you didn't break anything with running the following commands:
+
+```console
+composer install
+./vendor/bin/phpunit
+```
+
+## License
+
+BSD-2-Clause. See the [LICENSE.md](LICENSE.md).
