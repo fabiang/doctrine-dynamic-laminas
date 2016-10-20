@@ -2,6 +2,9 @@ language: php
 
 sudo: false
 
+git:
+  depth: 2
+
 cache:
   directories:
     - $HOME/.composer/cache
@@ -12,8 +15,10 @@ env:
     - PREFER_LOWEST="--prefer-lowest"
 
 php:
-  - 7
+  - 7.1
+  - 7.0
   - 5.6
+  - nightly
   - hhvm
   
 before_install:
