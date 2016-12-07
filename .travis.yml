@@ -22,7 +22,6 @@ php:
   - hhvm
   
 before_install:
-  - composer config --global --list
   - composer config --global github-oauth.github.com $GITHUB_OAUTH_TOKEN
 
 install:

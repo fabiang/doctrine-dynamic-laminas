@@ -26,6 +26,6 @@
         "zendframework/zend-servicemanager": "^2.7.6 || ^3.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.6"
+        "phpunit/phpunit": "^5.7.2"
     }
 }
