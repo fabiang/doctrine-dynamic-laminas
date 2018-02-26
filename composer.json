@@ -2,6 +2,14 @@
     "name": "fabiang/doctrine-dynamic-zf",
     "description": "Zend Framework binding for doctrine-dynamic",
     "type": "library",
+    "keywords": [
+        "zf2",
+        "module",
+        "zf2-module",
+        "zf3-module",
+        "zend-framework",
+        "doctrine"
+    ],
     "license": "BSD-2-Clause",
     "authors": [
         {
