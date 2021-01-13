@@ -2,12 +2,12 @@
 
 namespace Fabiang\DoctrineDynamic;
 
-use Zend\ModuleManager\Feature\ConfigProviderInterface;
-use Zend\ModuleManager\Feature\DependencyIndicatorInterface;
-use Zend\ModuleManager\Feature\InitProviderInterface;
-use Zend\ModuleManager\ModuleManagerInterface;
-use Zend\Mvc\Application;
-use Zend\Mvc\MvcEvent;
+use Laminas\ModuleManager\Feature\ConfigProviderInterface;
+use Laminas\ModuleManager\Feature\DependencyIndicatorInterface;
+use Laminas\ModuleManager\Feature\InitProviderInterface;
+use Laminas\ModuleManager\ModuleManagerInterface;
+use Laminas\Mvc\Application;
+use Laminas\Mvc\MvcEvent;
 
 final class Module implements
     ConfigProviderInterface,

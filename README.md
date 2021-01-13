@@ -1,27 +1,19 @@
-# fabiang/doctrine-dynamic-zf
+# fabiang/doctrine-dynamic-laminas
 
-Zend Framework 2/3 binding for [fabiang/doctrine-dynamic](https://github.com/fabiang/doctrine-dynamic).
+Laminas binding for [fabiang/doctrine-dynamic](https://github.com/fabiang/doctrine-dynamic).
 
-[![Latest Stable Version](https://poser.pugx.org/fabiang/doctrine-dynamic-zf/version)](https://packagist.org/packages/fabiang/doctrine-dynamic-zf)
-[![License](https://poser.pugx.org/fabiang/doctrine-dynamic-zf/license)](https://packagist.org/packages/fabiang/doctrine-dynamic-zf)
-[![Dependency Status](https://gemnasium.com/badges/github.com/fabiang/doctrine-dynamic-zf.svg)](https://gemnasium.com/github.com/fabiang/doctrine-dynamic-zf)
-[![Build Status](https://travis-ci.org/fabiang/doctrine-dynamic-zf.svg?branch=master)](https://travis-ci.org/fabiang/doctrine-dynamic-zf)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-zf/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-zf/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-zf/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-zf/?branch=master)
-
-## Requirements
-
-This module works with Zend Framework 2 and 3, but
-`zendframework/zend-servicemanager` must be at least at version 2.7.6.
-
-Please see the [composer.json](composer.json) file for all other packages required.
+[![Latest Stable Version](https://poser.pugx.org/fabiang/doctrine-dynamic-laminas/version)](https://packagist.org/packages/fabiang/doctrine-dynamic-laminas)
+[![License](https://poser.pugx.org/fabiang/doctrine-dynamic-laminas/license)](https://packagist.org/packages/fabiang/doctrine-dynamic-laminas)
+[![Build Status](https://travis-ci.org/fabiang/doctrine-dynamic-laminas.svg?branch=master)](https://travis-ci.org/fabiang/doctrine-dynamic-laminas)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-laminas/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-laminas/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-laminas/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-laminas/?branch=master)
 
 ## Installation
 
 New to Composer? Read the [introduction](https://getcomposer.org/doc/00-intro.md#introduction). Run the following Composer command:
 
 ```console
-$ composer require fabiang/doctrine-dynamic-zf
+$ composer require fabiang/doctrine-dynamic-laminas
 ```
 
 ## Configuration

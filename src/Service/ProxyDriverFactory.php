@@ -7,8 +7,8 @@ use Fabiang\DoctrineDynamic\Configuration;
 use Fabiang\DoctrineDynamic\ProxyDriverFactory as BaseProxyDriverFactory;
 use Doctrine\ORM\EntityManager;
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 final class ProxyDriverFactory extends BaseProxyDriverFactory implements
     FactoryInterface

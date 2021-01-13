@@ -3,11 +3,12 @@
 namespace Fabiang\DoctrineDynamic;
 
 use PHPUnit\Framework\TestCase;
-use Zend\ModuleManager\ModuleManagerInterface;
-use Zend\EventManager\EventManager;
-use Zend\EventManager\SharedEventManagerInterface;
-use Zend\Mvc\Application;
-use Zend\Mvc\MvcEvent;
+use Prophecy\PhpUnit\ProphecyTrait;
+use Laminas\ModuleManager\ModuleManagerInterface;
+use Laminas\EventManager\EventManager;
+use Laminas\EventManager\SharedEventManagerInterface;
+use Laminas\Mvc\Application;
+use Laminas\Mvc\MvcEvent;
 use Prophecy\Argument;
 
 /**
@@ -17,6 +18,9 @@ use Prophecy\Argument;
  */
 final class ModuleTest extends TestCase
 {
+
+    use ProphecyTrait;
+
     /**
      * @var Module
      */
@@ -26,7 +30,7 @@ final class ModuleTest extends TestCase
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->object = new Module;
     }
@@ -41,15 +45,14 @@ final class ModuleTest extends TestCase
         );
 
         $sharedEventManager->attach(
-            Application::class,
-            MvcEvent::EVENT_BOOTSTRAP,
-            Argument::that(function (callable $callback) {
-                list($obj, $method) = $callback;
-                return $obj instanceof Listener\RegisterProxyDriverListener
-                    && $method === 'onBootstrap';
-            })
-        )
-        ->shouldBeCalled();
+                Application::class,
+                MvcEvent::EVENT_BOOTSTRAP,
+                Argument::that(function (callable $callback) {
+                    list($obj, $method) = $callback;
+                    return $obj instanceof Listener\RegisterProxyDriverListener && $method === 'onBootstrap';
+                })
+            )
+            ->shouldBeCalled();
 
         $eventManager = $this->prophesize(EventManager::class);
         $eventManager->getSharedManager()->willReturn($sharedEventManager->reveal());
@@ -66,12 +69,12 @@ final class ModuleTest extends TestCase
     public function testGetConfig()
     {
         $config = $this->object->getConfig();
-        $this->assertInternalType('array', $config);
+        $this->assertIsArray($config);
         $this->assertArrayHasKey('doctrine_dynamic', $config);
-        $this->assertInternalType('array', $config['doctrine_dynamic']);
+        $this->assertIsArray($config['doctrine_dynamic']);
 
         $this->assertArrayHasKey('service_manager', $config);
-        $this->assertInternalType('array', $config['service_manager']);
+        $this->assertIsArray($config['service_manager']);
 
         $this->assertSame(
             [
@@ -83,4 +86,5 @@ final class ModuleTest extends TestCase
             $config['service_manager']
         );
     }
+
 }

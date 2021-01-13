@@ -3,13 +3,14 @@
 namespace Fabiang\DoctrineDynamic\Service;
 
 use PHPUnit\Framework\TestCase;
+use Prophecy\PhpUnit\ProphecyTrait;
 use Fabiang\DoctrineDynamic\Configuration;
 use Fabiang\DoctrineDynamic\ProxyDriver;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Configuration as DoctrineConfiguration;
-use Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain;
+use Doctrine\Persistence\Mapping\Driver\MappingDriverChain;
 use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 use Prophecy\Argument;
 
 /**
@@ -19,6 +20,9 @@ use Prophecy\Argument;
  */
 final class ProxyDriverFactoryTest extends TestCase
 {
+
+    use ProphecyTrait;
+
     /**
      * @var ProxyDriverFactory
      */
@@ -28,7 +32,7 @@ final class ProxyDriverFactoryTest extends TestCase
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->object = new ProxyDriverFactory;
     }
@@ -47,12 +51,12 @@ final class ProxyDriverFactoryTest extends TestCase
         ]);
 
         $mappingDriverChain->addDriver(
-            Argument::that(function($driver) use($driver1) {
-                return $driver->getOriginalDriver() === $driver1;
-            }),
-            'MyNamespace'
-        )
-        ->shouldBeCalled();
+                Argument::that(function($driver) use($driver1) {
+                    return $driver->getOriginalDriver() === $driver1;
+                }),
+                'MyNamespace'
+            )
+            ->shouldBeCalled();
 
         $doctrineConfiguration = $this->prophesize(DoctrineConfiguration::class);
         $doctrineConfiguration->getMetadataDriverImpl()
@@ -74,7 +78,7 @@ final class ProxyDriverFactoryTest extends TestCase
             $container->reveal(),
             ProxyDriver::class
         );
-        $this->assertInternalType('array', $proxyDrivers);
+        $this->assertIsArray($proxyDrivers);
         $this->assertArrayHasKey('MyNamespace', $proxyDrivers);
         $this->assertInstanceOf(
             ProxyDriver::class,
@@ -86,7 +90,7 @@ final class ProxyDriverFactoryTest extends TestCase
         );
 
         $proxyDrivers = $this->object->createService($container->reveal());
-        $this->assertInternalType('array', $proxyDrivers);
+        $this->assertIsArray($proxyDrivers);
         $this->assertArrayHasKey('MyNamespace', $proxyDrivers);
         $this->assertInstanceOf(
             ProxyDriver::class,
@@ -97,4 +101,5 @@ final class ProxyDriverFactoryTest extends TestCase
             $proxyDrivers['MyNamespace']->getOriginalDriver()
         );
     }
+
 }

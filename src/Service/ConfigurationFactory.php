@@ -5,8 +5,8 @@ namespace Fabiang\DoctrineDynamic\Service;
 use Fabiang\DoctrineDynamic\Configuration;
 use Fabiang\DoctrineDynamic\ConfigurationFactory as BaseConfigurationFactory;
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class ConfigurationFactory extends BaseConfigurationFactory implements
     FactoryInterface

@@ -3,9 +3,9 @@
 namespace Fabiang\DoctrineDynamic\Listener;
 
 use Fabiang\DoctrineDynamic\ProxyDriver;
-use Zend\ModuleManager\Feature\BootstrapListenerInterface;
-use Zend\EventManager\EventInterface;
-use Zend\Mvc\MvcEvent;
+use Laminas\ModuleManager\Feature\BootstrapListenerInterface;
+use Laminas\EventManager\EventInterface;
+use Laminas\Mvc\MvcEvent;
 
 class RegisterProxyDriverListener implements BootstrapListenerInterface
 {
@@ -15,7 +15,7 @@ class RegisterProxyDriverListener implements BootstrapListenerInterface
     public function onBootstrap(EventInterface $e)
     {
         if ($e instanceof MvcEvent) {
-            /* @var $serviceManager \Zend\ServiceManager\ServiceManager */
+            /* @var $serviceManager \Laminas\ServiceManager\ServiceManager */
             $serviceManager = $e->getApplication()->getServiceManager();
             $proxyDrivers = $serviceManager->get(ProxyDriver::class);
             $serviceManager->setService(

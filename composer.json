@@ -1,13 +1,10 @@
 {
-    "name": "fabiang/doctrine-dynamic-zf",
-    "description": "Zend Framework binding for doctrine-dynamic",
+    "name": "fabiang/doctrine-dynamic-laminas",
+    "description": "Laminas binding for doctrine-dynamic",
     "type": "library",
     "keywords": [
-        "zf2",
         "module",
-        "zf2-module",
-        "zf3-module",
-        "zend-framework",
+        "laminas",
         "doctrine"
     ],
     "license": "BSD-2-Clause",
@@ -24,16 +21,20 @@
         }
     },
     "require": {
-        "php": "^5.6 || ^7.0",
-        "doctrine/doctrine-orm-module": "^1.0 || ^2.1",
+        "php": "^7.4 || ^8.0",
+        "doctrine/doctrine-orm-module": "^3.0",
         "doctrine/orm": "^2.5",
-        "fabiang/doctrine-dynamic": "^0.1.2",
-        "zendframework/zend-eventmanager": "^2.5 || ^3.0",
-        "zendframework/zend-modulemanager": "^2.7",
-        "zendframework/zend-mvc": "^2.0 || ^3.0",
-        "zendframework/zend-servicemanager": "^2.7.6 || ^3.0"
+        "fabiang/doctrine-dynamic": "^1.0.0",
+        "laminas/laminas-eventmanager": "^3.0",
+        "laminas/laminas-modulemanager": "^2.9",
+        "laminas/laminas-mvc": "^3.0",
+        "laminas/laminas-servicemanager": "^3.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7.2"
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "replace": {
+        "fabiang/doctrine-dynamic-zf": "*"
     }
 }
