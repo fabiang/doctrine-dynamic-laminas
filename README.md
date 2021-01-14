@@ -4,7 +4,7 @@ Laminas binding for [fabiang/doctrine-dynamic](https://github.com/fabiang/doctri
 
 [![Latest Stable Version](https://poser.pugx.org/fabiang/doctrine-dynamic-laminas/version)](https://packagist.org/packages/fabiang/doctrine-dynamic-laminas)
 [![License](https://poser.pugx.org/fabiang/doctrine-dynamic-laminas/license)](https://packagist.org/packages/fabiang/doctrine-dynamic-laminas)
-[![Build Status](https://travis-ci.org/fabiang/doctrine-dynamic-laminas.svg?branch=master)](https://travis-ci.org/fabiang/doctrine-dynamic-laminas)
+[![Build Status](https://travis-ci.com/fabiang/doctrine-dynamic-laminas.svg?branch=master)](https://travis-ci.com/fabiang/doctrine-dynamic-laminas)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-laminas/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-laminas/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-laminas/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/fabiang/doctrine-dynamic-laminas/?branch=master)
 
