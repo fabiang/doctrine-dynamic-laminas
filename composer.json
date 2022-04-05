@@ -21,8 +21,8 @@
         }
     },
     "require": {
-        "php": "^7.4 || ^8.0",
-        "doctrine/doctrine-orm-module": "^3.0",
+        "php": "^7.4 || ~8.0.0 || ~8.1.0",
+        "doctrine/doctrine-orm-module": "^3.0 || ^4.0 || ^5.0",
         "doctrine/orm": "^2.5",
         "fabiang/doctrine-dynamic": "^1.0.0",
         "laminas/laminas-eventmanager": "^3.0",
