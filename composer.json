@@ -22,9 +22,9 @@
     },
     "require": {
         "php": "^7.4 || ~8.0.0 || ~8.1.0",
-        "doctrine/doctrine-orm-module": "^3.0 || ^4.0 || ^5.0",
+        "doctrine/doctrine-orm-module": "^3.0 || ^4.0 || ^5.1",
         "doctrine/orm": "^2.5",
-        "fabiang/doctrine-dynamic": "^1.0.0",
+        "fabiang/doctrine-dynamic": "^1.0 || ^2.0",
         "laminas/laminas-eventmanager": "^3.0",
         "laminas/laminas-modulemanager": "^2.9",
         "laminas/laminas-mvc": "^3.0",
@@ -32,9 +32,26 @@
     },
     "require-dev": {
         "phpspec/prophecy-phpunit": "^2.0",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "laminas/laminas-coding-standard": "^2.3",
+        "vimeo/psalm": "^4.23"
     },
     "replace": {
         "fabiang/doctrine-dynamic-zf": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "phpcs": "phpcs",
+        "psalm": "psalm --no-cache",
+        "phpunit": "phpunit",
+        "test": [
+            "@phpcs",
+            "@psalm",
+            "@phpunit"
+        ]
     }
 }

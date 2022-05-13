@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fabiang\DoctrineDynamic;
 
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
@@ -17,7 +19,7 @@ final class Module implements
     /**
      * {@inheritDoc}
      */
-    public function getConfig()
+    public function getConfig(): iterable
     {
         return require __DIR__ . '/../config/module.config.php';
     }
@@ -25,18 +27,18 @@ final class Module implements
     /**
      * {@inheritDoc}
      */
-    public function getModuleDependencies()
+    public function getModuleDependencies(): array
     {
         return ['DoctrineORMModule'];
     }
-    
+
     /**
      * {@inheritDoc}
      */
-    public function init(ModuleManagerInterface $manager)
+    public function init(ModuleManagerInterface $manager): void
     {
         $sharedEventManager = $manager->getEventManager()->getSharedManager();
-        $listener = new Listener\RegisterProxyDriverListener();
+        $listener           = new Listener\RegisterProxyDriverListener();
         $sharedEventManager->attach(
             Application::class,
             MvcEvent::EVENT_BOOTSTRAP,

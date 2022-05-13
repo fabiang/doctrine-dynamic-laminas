@@ -3,3 +3,5 @@
 !/tests/logs/.gitkeep
 .phpunit.result.cache
 /nbproject/private/
+phpunit.xml
+.phpcs-cache
