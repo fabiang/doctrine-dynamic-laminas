@@ -22,8 +22,7 @@ final class ModuleTest extends TestCase
 {
     use ProphecyTrait;
 
-    /** @var Module */
-    private $object;
+    private Module $object;
 
     /**
      * Sets up the fixture, for example, opens a network connection.
@@ -37,7 +36,7 @@ final class ModuleTest extends TestCase
     /**
      * @covers ::init
      */
-    public function testInit()
+    public function testInit(): void
     {
         $sharedEventManager = $this->prophesize(
             SharedEventManagerInterface::class
@@ -65,7 +64,7 @@ final class ModuleTest extends TestCase
     /**
      * @covers ::getConfig
      */
-    public function testGetConfig()
+    public function testGetConfig(): void
     {
         $config = $this->object->getConfig();
         $this->assertIsArray($config);
