@@ -31,7 +31,6 @@ class ConfigurationFactoryTest extends TestCase
 
     /**
      * @covers ::__invoke
-     * @covers ::createService
      */
     public function testInvoke(): void
     {

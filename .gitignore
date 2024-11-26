@@ -5,3 +5,4 @@
 /nbproject/private/
 phpunit.xml
 .phpcs-cache
+composer.lock
